@@ -23,4 +23,6 @@ object BizConstants {
     const val ID = "id"
     const val VALID = "valid"
     const val FRUIT = "fruit"
+    const val USERNAME = "username"
+    const val PASSWORD = "password"
 }

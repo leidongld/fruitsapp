@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ /**
+  ~  * Copyright (C) 2024 Lei Dong
+  ~  *
+  ~  * All rights reserved. This software is the intellectual property of Lei Dong,
+  ~  * and is protected by applicable copyright and other laws.
+  ~  */
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_app"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Register"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="22sp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/edt_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="22sp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="24dp"
+        android:text="Register"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

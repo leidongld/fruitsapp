@@ -1,0 +1,13 @@
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ /**
+  ~  * Copyright (C) 2024 Lei Dong
+  ~  *
+  ~  * All rights reserved. This software is the intellectual property of Lei Dong,
+  ~  * and is protected by applicable copyright and other laws.
+  ~  */
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<resources>
+    <dimen name="activity_horizontal_margin">48dp</dimen>
+</resources>

@@ -26,7 +26,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.lllddd.fruits.biz.constants.BizConstants
 import com.lllddd.fruits.R
 import com.lllddd.fruits.biz.beans.FruitBean
-import com.lllddd.fruits.biz.detail.vm.DetailPageViewModel
+import com.lllddd.fruits.biz.detail.vm.DetailPageViewModelImpl
 import com.lllddd.fruits.network.resp.Resp
 import com.lllddd.fruits.utils.BlurUtils
 
@@ -36,7 +36,7 @@ import com.lllddd.fruits.utils.BlurUtils
  * description:水果详情页
  */
 class FruitDetailActivity : AppCompatActivity() {
-    private lateinit var _viewModel: DetailPageViewModel
+    private lateinit var _viewModel: DetailPageViewModelImpl
 
     private lateinit var mImgAvatar: ImageView
     private lateinit var mTxtName: TextView
@@ -49,7 +49,7 @@ class FruitDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        _viewModel = ViewModelProvider(this).get(DetailPageViewModel::class.java)
+        _viewModel = ViewModelProvider(this)[DetailPageViewModelImpl::class.java]
 
         window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 

@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.lllddd.fruits.biz.constants.BizConstants
 import com.lllddd.fruits.R
-import com.lllddd.fruits.biz.add.vm.AddPageViewModel
+import com.lllddd.fruits.biz.add.vm.AddPageViewModelImpl
 import com.lllddd.fruits.network.resp.Resp
 
 /**
@@ -26,7 +26,7 @@ import com.lllddd.fruits.network.resp.Resp
  * description:增加水果页
  */
 class AddFruitActivity : AppCompatActivity() {
-    private lateinit var _viewModel: AddPageViewModel
+    private lateinit var _viewModel: AddPageViewModelImpl
 
     private lateinit var mEdtName: EditText
 
@@ -41,7 +41,7 @@ class AddFruitActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        _viewModel = ViewModelProvider(this).get(AddPageViewModel::class.java)
+        _viewModel = ViewModelProvider(this)[AddPageViewModelImpl::class.java]
 
         setContentView(R.layout.activity_add)
 

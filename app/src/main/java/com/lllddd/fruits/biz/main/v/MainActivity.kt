@@ -31,6 +31,7 @@ import com.lllddd.fruits.biz.detail.v.FruitDetailActivity
 import com.lllddd.fruits.biz.main.adapters.FruitAdapter
 import com.lllddd.fruits.biz.main.listeners.OnFruitItemClickListener
 import com.lllddd.fruits.biz.main.listeners.OnFruitItemLongClickListener
+import com.lllddd.fruits.biz.main.vm.MainPageViewModelImpl
 import com.lllddd.fruits.biz.main.vm.MainPageViewModel
 import com.lllddd.fruits.network.resp.Resp
 
@@ -59,7 +60,7 @@ class MainActivity : AppCompatActivity(), OnFruitItemClickListener, OnFruitItemL
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        _viewModel = ViewModelProvider(this).get(MainPageViewModel::class.java)
+        _viewModel = ViewModelProvider(this)[MainPageViewModelImpl::class.java]
 
         setContentView(R.layout.activity_main)
 
